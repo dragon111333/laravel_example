@@ -29,3 +29,5 @@ Route::get("/test_controller",[\App\Http\Controllers\UserController::class,"inde
 Route::get("/test_send",function(){
     return json_encode(["name"=>"Thewin"]);
 });
+//--Group
+Route::prefix("/tset_group")->group(base_path("routes/test_group.php"));
